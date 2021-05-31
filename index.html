@@ -259,11 +259,11 @@
 
         <div class="footer_content">
 
-            <form method="post" autocomplete="off" name="google-sheet" onsubmit="return validateForm(); ">
+            <form method="post" id="contact_form" action="form.php" autocomplete="off" name="google-sheet" onsubmit="return validateForm(); ">
                 <div class="field" data-aos="fade-up">
                     <label for="email"></label>
-                    <input name="EMAIL" id="email address" type="text" class="form-control" placeholder="Email Address" value=""
-                        required>
+                    <input name="email" type="text" class="form-control" placeholder="Email Address" value=""
+                    required>
                 </div>
                 <button type="submit" name="submit" class="btnSubmit" value="SUBMIT" data-aos="fade-up">SEND</button>
             </form>
