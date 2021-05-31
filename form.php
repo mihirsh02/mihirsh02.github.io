@@ -1,13 +1,14 @@
 <?php
     $name = $_POST['email'];
 
-    $email_from = 'mihir.sharma2002@outlook.com';
+    $email_from = 'mihir.sharma2001@gmail.com';
 
     $email_subject = "New Form";
 
-    $email_body = "Message: $name.\n";
+    $email_body = "Message: $name.\n".
+                    "$visitor_email.\n";
 
-    $to = "mihir.sharma2001@gmail.com";
+    $to = "mihir.sharma2002@outlook.com";
 
     $headers = "From: $email_from \r\n";
 
