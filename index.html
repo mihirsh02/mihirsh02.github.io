@@ -260,11 +260,11 @@
 
         <div class="footer_content">
 
-            <form method="post" id="contact_form" action="form.php" autocomplete="off" name="form">
+            <form method="post" autocomplete="off" name="google-sheet" onsubmit="return validateForm(); ">
                 <div class="field" data-aos="fade-up">
                     <label for="email"></label>
-                    <input name="email" type="text" class="form-control" placeholder="Email Address" value=""
-                    required>
+                    <input name="EMAIL" id="email" type="text" class="form-control" placeholder="Email Address" value=""
+                        required>
                 </div>
                 <button type="submit" name="submit" class="btnSubmit" value="SUBMIT" data-aos="fade-up">SEND</button>
             </form>
@@ -299,9 +299,57 @@
         });
     </script>
 
+    <!--Form Input Validation-->
+    <script type="text/javascript">
+        function validateName() {
+            var name = document.getElementById('name').value;
+            if (name.length == 0) {
+                alert("Name can't be blank");
+                return false;
+
+            }
+            if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+                alert("Please enter your correct name!"); //Validation Message
+                return false;
+            }
+            return true;
+        }
+
+        function validateEmail() {
+
+            var email = document.getElementById('email').value;
+            if (email.length == 0) {
+                alert("Email can't be blank!"); //Validation Message
+                return false;
+
+            }
+
+            if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+                alert("Please enter a correct email address"); //Validation Message
+                return false;
+
+            }
+
+            return true;
+
+        }
+
+
+        function validateForm() {
+            if (!validateName() || !validateEmail()) {
+
+                alert("Form not submitted"); //Validation Message
+                return false;
+            } else {
+                submitted = true;
+                return true;
+            }
+        }
+    </script>
+
     <script>
         const scriptURL =
-            'https://script.google.com/macros/s/AKfycbz5L9uxeABUecJ0eWGyVwohOJ7BU0Vh1gcGnUwjmn65nlJ3faRLJdPBzSyv-WRrPI-O/exec'
+            'https://script.google.com/macros/s/AKfycbyosIPrkFw3L7g50QsS-CxRuh-IRItp66JLtKZ00EcFH92ryRLX2_nJw2SZCcme3MCdAw/exec'
         const form = document.forms['google-sheet']
 
         form.addEventListener('submit', e => {
@@ -318,4 +366,4 @@
 
 </body>
 
-</html>
+</html>``
