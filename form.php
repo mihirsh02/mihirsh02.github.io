@@ -7,9 +7,11 @@
 
     $email_body = "Message: $name.\n";
 
-    $to = "mihir.shaarma2001@gmail.com";
+    $to = "mihir.sharma2001@gmail.com";
 
     $headers = "From: $email_from \r\n";
+
+    $headers .= "Reply-To: $visitor_email \r\n";
 
     mail($to,$email_subject,$email_body,$headers);
 
