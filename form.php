@@ -1,7 +1,7 @@
 <?php
     $name = $_POST['email'];
 
-    $email_from = 'mihirsh02@mihirsh02.github.io';
+    $email_from = 'mihir.sharma2002@outlook.com';
 
     $email_subject = "New Form";
 
