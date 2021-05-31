@@ -1,5 +1,4 @@
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -49,7 +48,6 @@
 }
 
 .gooey .dots span {
-    display: block;
     float: left;
     width: 16px;
     height: 16px;
@@ -195,7 +193,6 @@ header .sticky-div ul li.active {
     display: grid;
     justify-content: center;
     margin: 0 auto;
-    grid-template-columns: repeat(2);
     grid-auto-rows: minmax(10rem, auto);
     grid-gap: 3rem;
 }
