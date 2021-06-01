@@ -439,29 +439,6 @@ footer {
     border-top-right-radius: 3.5rem;
 }
 
-form {
-    display: flex;
-    justify-content: center;
-    margin-top: -7rem;
-}
-
-button {
-    background-color: #1D1F20;
-    border-radius: 30%;
-    width: 5rem;
-    height: 5rem;
-    border: none;
-    font-family: 'Montserrat', sans-serif;
-    color: #CED6DF;
-    font-size: 1rem;
-    margin-left: 1rem;
-}
-
-label,
-select,
-[placeholder] {
-    color: #CED6DF;
-}
 
 input {
     background: #191919;
@@ -483,6 +460,7 @@ input {
 .footer_content {
     margin-top: 7rem;
 }
+
 
 /*Media Queries*/
 
@@ -651,15 +629,6 @@ input {
         border-top-right-radius: 3.5rem;
     }
 
-    form {
-        margin-top: 1rem;
-    }
-
-    input {
-        padding: 5%;
-        width: 28rem;
-    }
-
     .footer_text {
         margin-top: 4rem;
         line-height: 5rem;
@@ -671,17 +640,7 @@ input {
         margin-top: 2rem;
     }
 
-    button {
-        font-size: 1rem;
-        margin-left: 1rem;
-    }
-
-    label,
-    select,
-    [placeholder] {
-        font-size: 1.2rem;
-    }
-
+ 
 }
 
 /*Ipad*/
@@ -832,30 +791,12 @@ input {
         height: 16rem;
     }
 
-    .contact_img {
-        width: 6rem;
-    }
-
-    .icon_facebook {
-        display: flex;
-        height: 6rem;
-    }
-
     footer {
         margin-top: 15rem;
         height: 24rem;
         background-color: #000;
         border-top-left-radius: 3.5rem;
         border-top-right-radius: 3.5rem;
-    }
-
-    form {
-        margin-top: 1rem;
-    }
-
-    input {
-        padding: 5%;
-        width: 48rem;
     }
 
     .footer_text {
@@ -867,17 +808,6 @@ input {
 
     .footer_content {
         margin-top: 2rem;
-    }
-
-    button {
-        font-size: 1rem;
-        margin-left: 1rem;
-    }
-
-    label,
-    select,
-    [placeholder] {
-        font-size: 1.2rem;
     }
 
 }
