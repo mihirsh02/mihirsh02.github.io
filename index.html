@@ -79,21 +79,6 @@
                     Chennai. My interest lies in challenges.
                 </div>
             </div>
-
-            <iframe src="https://open.spotify.com/embed/playlist/5P2tz4Ac6BEVhIC8RYx0sV" width="440" height="330" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
-
-            <div class="hobbies about_card" data-aos="zoom-in">
-                <ul class="hobbies_text">
-                    <li>💻</li>
-                    <li>⚽</li>
-                    <li>🕺🏻</li>
-                    <li>🍔</li>
-                    <li>🎮</li>
-                    <li>🎧</li>
-                </ul>
-            </div>
-
         </div>
 
     </section>
@@ -258,9 +243,35 @@
 
     <footer>
 
+        <!--Form-->
         <div class="footer_content">
 
-             <!--Footer Text-->
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+                onload="myfunction()">
+            </iframe>
+
+            <form id="myForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd46wNA-BxNvF5geB6vdtoqWJTUmgHVtG6vKIduwnxnEzzi0Q/formResponse" method="post" target="hidden_iframe" value="" onsubmit="return validateForm(); ">
+                <div class="name">
+                    <label></label>
+                    <input class="name" type="text" placeholder="Name" id="name" required name="entry.20568833414">
+                </div>
+                <br>
+                <div class="email">
+                    <label></label>
+                    <input class="email" type="text" placeholder="Email" id="email" required name="entry.1024738799">
+                </div>
+                <br>
+                <div class="query">
+                    <label></label>
+                    <input class="query" type="text" placeholder="Query" required name="entry.940514943">
+                </div>
+                <br>
+                <div class="button">
+                    <button class="button" type="submit" name="submit" onclick="clickfunc()">SEND</button>
+                </div>
+            </form>
+
+            <!--Footer Text-->
 
             <div class="footer_text">
                 <p>Copyright © Mihir Sharma 2021</p>
